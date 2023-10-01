@@ -201,7 +201,7 @@ We can output the changeset ir plan to be passed to an apply, but often you can 
 `terraform apply`
 This will run a plan and pass the changeset to be executed by terraform. Apply should prompt yes or no.
 
-This can be auto approved by providing the auto approve flag eg `terraform applu --auto-approve`
+This can be auto approved by providing the auto approve flag eg `terraform apply --auto-approve`
 
 While creating S3 bucket, needed to change the bucket name to be lowercase. Updated resource for the bucket name.
 
