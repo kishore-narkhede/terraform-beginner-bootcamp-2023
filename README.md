@@ -201,9 +201,18 @@ We can output the changeset ir plan to be passed to an apply, but often you can 
 `terraform apply`
 This will run a plan and pass the changeset to be executed by terraform. Apply should prompt yes or no.
 
-This can be auto approved by providing the auto approve flag eg `terraform applu --auto-approve`
+This can be auto approved by providing the auto approve flag eg `terraform apply --auto-approve`
 
-### Terraform Lock Files
+While creating S3 bucket, needed to change the bucket name to be lowercase. Updated resource for the bucket name.
+
+#### Terraform Destroy
+
+`terraform destroy`
+This will destroy resources.
+
+A flag to auto approve can also be used to skip approve prompt. (similar to terraform apply)
+
+#### Terraform Lock Files
 
 `.terraform.lock.hcl` contains the locked versioning for the providers or modules that should be used with this project.
 
@@ -218,6 +227,6 @@ If you lose this file, you lose knowing the state of your infrastructure.
 
 `.terraform.tfstate.backup` is the previous state file state.
 
-### Terraform Directory
+#### Terraform Directory
 
 `.terraform` directory contains binaries of terraform providers.
