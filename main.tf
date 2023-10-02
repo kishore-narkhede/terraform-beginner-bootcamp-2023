@@ -1,5 +1,14 @@
 # Change made on Github
 terraform {
+
+  cloud {
+    organization = "KishoreOrg"
+
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
+
   required_providers {
     random = {
       source  = "hashicorp/random"
@@ -33,9 +42,6 @@ resource "aws_s3_bucket" "example" {
 }
 
 # https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
-output "random_bucket_name_id" {
-  value = random_string.bucket_name.id
-}
 output "random_bucket_name_name" {
   value = random_string.bucket_name.result
 }
