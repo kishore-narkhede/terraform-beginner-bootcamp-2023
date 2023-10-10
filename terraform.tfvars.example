@@ -1,5 +1,5 @@
 user_uuid = "411a3969-7d23-4883-8ecf-9ffcda42e93e"
 bucket_name="q2gn5nba6pci5n57ppdow9qvrej19t23"
 
-index_html_filepath = "/public/index.html"
-error_html_filepath = "/public/error.html"
+index_html_filepath = "./public/index.html"
+error_html_filepath = "./public/error.html"
