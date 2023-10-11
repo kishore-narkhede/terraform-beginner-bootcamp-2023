@@ -3,4 +3,5 @@ bucket_name="q2gn5nba6pci5n57ppdow9qvrej19t23"
 
 index_html_filepath = "./public/index.html"
 error_html_filepath = "./public/error.html"
-content_version=2
+content_version=1
+assets_path = "./public/assets/"
